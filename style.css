@@ -1,0 +1,57 @@
+*{}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div#wrapper {
+    margin: 0px auto;
+    width: 800px;
+    min-height: 800px;
+/* background: rgb(0, 81, 255);*/
+}
+
+div#container {
+    margin: 0px auto;
+    width: 100%;
+    min-height: 800px;
+    /*background: rgb(20, 20, 21);*/
+}
+
+div#login {
+    padding: 2.5%;
+    border: solid 1px #ccc;
+    border-radius: 5px;
+}
+
+.field {
+    border: solid 1px #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #000;
+    width: 98%;
+    margin-top: 10px;
+    padding: 1%;
+}
+
+.button {
+    border: solid 1px;
+    border-radius: 5px;
+    padding: 1% 2% 1% 2%;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.sucesso {
+    background: blue;
+}
+
+.link {
+    color: blue;
+    border: none;
+    font-weight: normal;
+    text-decoration: none;
+    padding: 0%;
+}
