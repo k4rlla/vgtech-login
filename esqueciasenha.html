@@ -9,16 +9,21 @@
 <body>
     <div id="wrapper">
         <div id="container">
-            <div id="login">
+            <div id="login-recupera">
                 <h2>Recupere a sua senha</h2>
-                <form action="" method="post">
-                    <input name="email" type="text" class="field" placeholder="Digite seu email">
-                    
+                <form action="" onsubmit="validaForm(event)" method="post">
+                    <div class="form-element">
+                        <label for="email">Digite seu email</label>
+                        <input name="email" type="text" class="field" placeholder="usuario@email.com" tabindex="1" required aria-label="Email"/>
+                        <span class="vd" title="Campo obrigatório">*</span>
+                    </div>
                     <br/>
-                    <button class="button sucesso">Recuperar senha</button>
+                    <button class="button sucesso default" aria-label="Recupera senha">Recuperar senha</button>
+                    <a href="login.html" class="button default secundario" aria-label="Voltar">Voltar</a>
                 </form>
             </div>
         </div>
     </div>
+    <script src="main.js" type="text/javascript"></script>
 </body>
 </html>

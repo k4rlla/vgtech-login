@@ -9,17 +9,35 @@
 <body>
     <div id="wrapper">
         <div id="container">
-            <div id="login">
-                <h2>Login</h2>
-                <form  id="form-login" action="" method="post" onsubmit="validaForm(event)">
-                    <input name="email" type="text" class="field" placeholder="Digite seu email" tabindex="1">
-                    <input name="senha" type="password" class="field" placeholder="Senha" tabindex="2">
-                    <br/>
-                    <button type="submit" class="button sucesso" tabindex="3">Entrar</button>
-                </form>
-                <br>
-                <a class="button link" href="esqueciasenha.html" tabindex="4">Esqueci a senha</a>
-
+            <div id="login-container">
+                <div id="login-banner">
+                    <video autoplay loop muted style="width: 100%;">
+                        <source src="login.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                      </video>
+                </div>
+                <div id="login">
+                    <h2>Login</h2>
+                    <form id="form-login" action="" method="post" onsubmit="validaForm(event)">
+                        <div class="form-element">
+                            <label for="email">Digite seu email</label>
+                            <input name="email" type="text" class="field" placeholder="usuario@email.com" tabindex="1" aria-label="Email" required>
+                            <span class="vd" title="Campo obrigatório">*</span>
+                        </div>
+                        
+                        <div class="form-element">
+                            <label for="email">Senha</label>
+                            <input name="senha" type="password" class="field" placeholder="Senha" tabindex="2" aria-label="Senha" required>
+                            <span class="vd" title="Campo obrigatório">*</span>
+                        </div>
+    
+                        <br/>
+                        <button type="submit" class="button sucesso" tabindex="3" aria-label="Entrar">Entrar</button>
+                    </form>
+                    <br>
+                    <a class="button link" href="esqueciasenha.html" tabindex="4" required aria-label="Esqueci a senha">Esqueci a senha</a>
+    
+                </div>
             </div>
         </div>
     </div>

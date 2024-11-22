@@ -11,16 +11,26 @@ function validacaoEmail(field) {
         (dominio.search(".") != -1) &&
         (dominio.indexOf(".") >= 1) &&
         (dominio.lastIndexOf(".") < dominio.length - 1)) {
-        alert("E-mail valido");
+       // alert("E-mail valido");
+        return true;
     }
     else {
         alert("E-mail invalido");
+        return false;
     }
+}
+
+function validacaoSenha(field){
+    if (field.value === "") {
+        alert("Digite sua senha");
+        return false;
+    } 
+    return true;
 }
 
 function validaForm (event) {
     event.preventDefault();
-    let formulario = document.getElementById("form-login");
+    let formulario = event.target;
     let fields = formulario.elements;
     for (let i = 0; i <= fields.length; i++){
         let campo = fields[i];
@@ -30,6 +40,7 @@ function validaForm (event) {
                 validacaoEmail(campo);
                 break;
             case "senha":
+                validacaoSenha(campo);
                 break;
         }
     }
