@@ -15,4 +15,4 @@ Obs:
 
 Para rodar o projeto:
 - Baixe o projeto na sua máquina usando o `git clone` e execute o arquivo login.html no seu browser
-- Para ver o projeto ao vivo, acesse: 
+- Para ver o projeto ao vivo, acesse: https://vglogin.netlify.app/login.html 
