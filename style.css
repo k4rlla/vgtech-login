@@ -1,7 +1,6 @@
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    /* background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%); */
+    font-family: Arial, Helvetica, sans-serif;    
     background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
 }
 
@@ -126,3 +125,62 @@ label {
     text-decoration: none;
     padding: 0%;
 }
+
+@media only screen and (max-width: 740px) {
+    div#wrapper, div#container {
+        width: 100%;
+    }
+
+    h2 {
+        width: 100%;
+        text-align: center;
+    }
+
+    label {
+        text-align: left;
+        width: 100%;
+    }
+
+    div#login-banner{
+        display:none;
+    }
+
+    div#login {
+        width: 100%;
+        text-align: center;
+    }
+
+    .field {
+        float:left;
+    }
+    
+  }
+
+@media only screen and (max-width: 600px) {
+    div#wrapper, div#container {
+        width: 100%;
+    }
+
+    h2 {
+        width: 100%;
+        text-align: center;
+    }
+    label {
+        width: 100%;
+    }
+
+    div#login-banner{
+        display:none;
+    }
+
+    div#login {
+        width: 100%;
+        text-align: center;
+    }
+
+    .form-element {
+        width: 100%;
+        float:left;
+    }
+    
+  }
